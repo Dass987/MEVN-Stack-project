@@ -8,7 +8,6 @@ router.get('/', async (request, response) => {
 });
 
 router.post('/', async (request, response) => {	
-	console.log('PASO POR AQUIIIIII');
 	const task = new Task(request.body);
 	await task.save();
 	response.json({status: 'Task Saved'});
