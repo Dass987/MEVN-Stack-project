@@ -16,7 +16,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // --- Routes
-app.use('/tasks', require('./routes/tasks'));
+app.use('/api/products', require('./routes/products'));
 
 // --- Static files
 app.use(express.static(path.join(__dirname, 'public')));
